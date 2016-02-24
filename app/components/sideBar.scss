@@ -1,0 +1,42 @@
+@import "~react-toolbox/lib/base";
+@import "~react-toolbox/lib/app_bar/config";
+@import "~react-toolbox/lib/button/config";
+$left_distance: 10px;
+
+.sideBar {
+  background: white;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+.sideBar_title {
+  font-size: 24px;
+  line-height: 64px;
+  color: white;
+  font-weight: $font-weight-bold;
+}
+
+.sideBar_header {
+  padding-left: $left_distance;
+  background: #1976d2;
+  height: 64px;
+}
+
+.sideBar_container {
+  margin-left: $left_distance;
+}
+
+.categoryItem {
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px 20px 5px 0;
+}
+
+.selected {
+  background: lightgray;
+}
